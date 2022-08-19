@@ -33,12 +33,12 @@ async def main():
     print(bans[0].ban_date)  # 2019-06-11 12:01:07+00:00ет
 
     # Выдача доступа к чекеру
-    response = await api.start_check(76561198021247080)
+    response = await api.start_check(76561198021247080,  moder_steamid=76561198021247080)
     print(response.status)  # success
     print(response.error)  # None
 
     # Выдача бана
-    response = await api.ban_player(76561198021247080)
+    response = await api.ban_player(76561198021247080, "macros")
     print(response.status)  # success
     print(response.error)  # None
 
