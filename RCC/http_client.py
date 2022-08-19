@@ -13,9 +13,7 @@ class AiohttpClient:
 
         self._session_params = session_params
 
-        user_agent = (
-            "RustCheatCheckAPI (https://github.com/MaHryCT3/RustCheatCheck_api)"
-        )
+        user_agent = "RustCheatCheckAPI (https://github.com/MaHryCT3/RCC_api)"
         self.headers: dict[str, str] = {
             "User-Agent": user_agent,
         }
